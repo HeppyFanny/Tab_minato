@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/0b1932f090.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- pannello informazioni di gioco -->
+        <div class="game-panel">
+            <h1>Campo Minato</h1>
+
+            <!-- Punteggio -->
+            <div class="score">
+                <div>SCORE</div>
+                <div>00000</div>
+            </div>
+        </div>
+
+        <!-- Tabellone gioco -->
+        <div class="game-board">
+            <div class="grid">
+                <!-- qui ci saranno le celle -->
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+
+                <!-- seconda linea -->
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+
+                <!-- terza linea -->
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+
+                <!-- quarta linea -->
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+
+                <!-- quinta linea -->
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+
+                <!-- sesta linea -->
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+
+                <!-- settima linea -->
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+
+                <!-- ottava linea -->
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+
+                <!-- nona linea -->
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+
+                <!-- decima linea -->
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+                <div class="cell cell-dark"></div>
+                <div class="cell"></div>
+            </div>
+
+            <!-- schermata fine gioco -->
+            <div class="end-game-screen ">
+                <h2 class="end-game-text">Game <br>Over</h2>
+                <button class="play-again">Gioca ancora</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- JS Custom -->
+    <script src="./main.js"></script>
+</body>
+</html>
